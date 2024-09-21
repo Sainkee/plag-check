@@ -3,7 +3,7 @@ import axios from "axios";
 import FormData from "form-data";
 import cors from "cors";
 const app = express();
-const PORT = 4000;
+const PORT = 4000  || process.env.PORT ;
 
 app.use(express.json());
 app.use(cors());
