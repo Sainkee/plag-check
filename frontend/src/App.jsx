@@ -14,7 +14,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await axios.post("http://localhost:4000/api/plag", { text });
+      const response = await axios.post("https://plag-check-qfo8.onrender.com/api/plag", { text });
       setResult(response.data); // Update with the response data
     } catch (error) {
       setError("Error checking plagiarism. Please try again.");
